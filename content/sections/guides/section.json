@@ -1,0 +1,9 @@
+{
+  "slug": "guides",
+  "label": "Guides & Help",
+  "description": "Tips and useful guides",
+  "icon": "📚",
+  "href": "/guides",
+  "group": "primary",
+  "order": 7
+}

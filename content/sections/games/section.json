@@ -1,0 +1,9 @@
+{
+  "slug": "games",
+  "label": "Games",
+  "description": "Free online games",
+  "icon": "🎮",
+  "href": "/games",
+  "group": "primary",
+  "order": 4
+}

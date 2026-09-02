@@ -1,0 +1,16 @@
+{
+  "slug": "calculators",
+  "name": "Calculators",
+  "description": "Fast everyday calculations.",
+  "icon": "🧮",
+  "order": 4,
+  "seo": {
+    "title": "Calculators — Free Online Calculators | Atoolsmart",
+    "description": "Fast, free online calculators for percentages and everyday calculations.",
+    "keywords": [
+      "online calculators",
+      "percentage calculator",
+      "free calculator"
+    ]
+  }
+}

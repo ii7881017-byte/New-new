@@ -1,0 +1,9 @@
+{
+  "slug": "favorites",
+  "label": "Favorites",
+  "description": "Your saved tools",
+  "icon": "⭐",
+  "href": "/favorites",
+  "group": "primary",
+  "order": 5
+}

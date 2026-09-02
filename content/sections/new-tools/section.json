@@ -1,0 +1,9 @@
+{
+  "slug": "new-tools",
+  "label": "New Tools",
+  "description": "Recently added tools",
+  "icon": "🆕",
+  "href": "/new-tools",
+  "group": "primary",
+  "order": 6
+}

@@ -1,0 +1,1 @@
+"use client";import{useState}from"react";export default function Tool(){const[f,setF]=useState<File|null>(null);return <div className="tool"><input type="file" accept="image/*" onChange={e=>setF(e.target.files?.[0]||null)}/>{f&&<p className="muted">Selected: {f.name} — {(f.size/1024).toFixed(1)} KB</p>}</div>}

@@ -1,0 +1,9 @@
+{
+  "slug": "home",
+  "label": "Home",
+  "description": "Main Atoolsmart homepage",
+  "icon": "🏠",
+  "href": "/",
+  "group": "primary",
+  "order": 1
+}

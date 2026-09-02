@@ -1,0 +1,16 @@
+{
+  "slug": "utility-tools",
+  "name": "Utility Tools",
+  "description": "Useful tools for everyday tasks.",
+  "icon": "🛠️",
+  "order": 5,
+  "seo": {
+    "title": "Utility Tools — Free Online Utilities | Atoolsmart",
+    "description": "Useful free online utilities for everyday tasks, with simple mobile-friendly experiences.",
+    "keywords": [
+      "utility tools",
+      "online utilities",
+      "free tools"
+    ]
+  }
+}
