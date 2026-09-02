@@ -1,0 +1,9 @@
+{
+  "slug": "about",
+  "label": "About Atoolsmart",
+  "description": "About the website",
+  "icon": "ℹ️",
+  "href": "/about",
+  "group": "more",
+  "order": 8
+}

@@ -1,0 +1,1 @@
+"use client";import{useState}from"react";export default function Tool(){const[f,setF]=useState<FileList|null>(null);return <div className="tool"><input type="file" accept="application/pdf" multiple onChange={e=>setF(e.target.files)}/>{f&&<p className="muted">{f.length} PDF file(s) selected.</p>}</div>}

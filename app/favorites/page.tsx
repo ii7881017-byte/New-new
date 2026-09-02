@@ -1,0 +1,1 @@
+import{tools}from"@/lib/content";import ToolCard from"@/components/ToolCard";export default function Page(){const list=tools.filter(t=>t.new);return <main className="page"><span className="eyebrow">ATOOLSMART</span><h1>Favorites</h1><p className="muted">Your saved and favorite tools.</p></main>}

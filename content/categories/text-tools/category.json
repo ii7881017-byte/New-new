@@ -1,0 +1,17 @@
+{
+  "slug": "text-tools",
+  "name": "Text Tools",
+  "description": "Writing, counting and text utilities.",
+  "icon": "📝",
+  "order": 3,
+  "seo": {
+    "title": "Text Tools — Free Online Writing Utilities | Atoolsmart",
+    "description": "Free online text tools for counting words, characters and handling everyday writing tasks.",
+    "keywords": [
+      "text tools",
+      "word counter",
+      "character counter",
+      "online text tools"
+    ]
+  }
+}

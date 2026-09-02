@@ -1,0 +1,34 @@
+{
+  "name": "atoolsmart",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run generate && next dev",
+    "build": "npm run generate && vinext build",
+    "start": "vinext start",
+    "generate": "node scripts/generate-content.mjs",
+    "dev:vinext": "npm run generate && vinext dev",
+    "build:vinext": "npm run generate && vinext build",
+    "start:vinext": "vinext start",
+    "deploy": "npm run build:vinext && npx @vinext/cloudflare deploy"
+  },
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "qrcode": "^1.5.4",
+    "vinext": "1.0.0-beta.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/qrcode": "^1.5.5",
+    "@vitejs/plugin-rsc": "0.5.34",
+    "@cloudflare/vite-plugin": "1.54.2",
+    "vite": "^8.0.0",
+    "wrangler": "^4.68.0"
+  }
+}

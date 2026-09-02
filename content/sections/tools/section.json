@@ -1,0 +1,9 @@
+{
+  "slug": "tools",
+  "label": "Tools",
+  "description": "All online tools",
+  "icon": "🧰",
+  "href": "/tools",
+  "group": "primary",
+  "order": 2
+}
