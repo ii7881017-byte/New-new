@@ -1,1 +1,0 @@
-import{tools}from"@/lib/content";import ToolCard from"@/components/ToolCard";export default function Page(){const list=tools.filter(t=>t.new);return <main className="page"><span className="eyebrow">ATOOLSMART</span><h1>New Tools</h1><p className="muted">Recently added tools.</p> <div className="grid">{list.map(t=><ToolCard key={t.slug} tool={t}/>)}</div></main>}
