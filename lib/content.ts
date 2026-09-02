@@ -1,1 +1,0 @@
-import{categories,tools,sections,locales,toolComponents}from"@/.generated/content";export{categories,tools,sections,locales,toolComponents};
