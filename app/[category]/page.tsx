@@ -19,7 +19,7 @@ export async function generateMetadata(
   return {
     title: c.seo?.title ?? `${c.name} — Free Online Tools`,
     description: c.seo?.description ?? c.description,
-    keywords: c.seo?.keywords,
+    keywords: c.seo?.keywords ? [...c.seo.keywords] : undefined,
     alternates: { canonical: `/${c.slug}` },
     openGraph: {
       title: c.seo?.title ?? c.name,

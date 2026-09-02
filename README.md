@@ -1,98 +1,42 @@
-# Atoolsmart — Scalable SEO Foundation v3.  طا
+# Atoolsmart — Cloudflare-ready scalable V4
 
-Production domain: **https://atoolsmart.com**
+Production domain: https://atoolsmart.com
 
 ## Core rule: ADD, DON'T EDIT
 
-The core navigation, header, routing, SEO helpers and sitemap are designed to discover content from folders.
+New tools, categories, sections, and locales are discovered from folders/files. The generated `.generated/content.ts` is rebuilt by the content generator and should not be edited manually.
 
-### Add a tool
+## Cloudflare Workers
 
-Create:
+V4 is prepared for Cloudflare Workers using vinext and the Cloudflare Vite plugin.
 
-```text
-content/categories/<category>/tools/<tool>/
-  tool.json
-  tool.tsx
-```
+Build:
+`npm run build`
 
-Include SEO directly in `tool.json`:
+Vinext development:
+`npm run dev:vinext`
 
-```json
-{
-  "slug": "json-formatter",
-  "name": "JSON Formatter",
-  "description": "Format and validate JSON online.",
-  "icon": "{ }",
-  "popular": false,
-  "new": true,
-  "seo": {
-    "title": "JSON Formatter Online Free | Atoolsmart",
-    "description": "Format and validate JSON online for free.",
-    "keywords": ["json formatter", "format json", "json validator"]
-  }
-}
-```
+Deploy:
+`npm run deploy`
 
-Run:
+Cloudflare Workers Builds settings:
+- Build command: `npm run build`
+- Deploy command: `npx @vinext/cloudflare deploy`
+- Root directory: `/`
+- Production branch: `main`
 
-```bash
-npm install
-npm run dev
-```
+The Cloudflare configuration is source-controlled in `wrangler.jsonc` and `vite.config.ts`, so automatic configuration should not rewrite the repository.
 
-The generator discovers the new tool and the dynamic route automatically. Its metadata, canonical URL, Open Graph/Twitter metadata, WebApplication schema, breadcrumbs and sitemap entry are generated from the tool data.
+## SEO
 
-### Add a category
+Includes site-wide metadata, per-category/tool metadata, canonical URLs, Open Graph/Twitter metadata, JSON-LD, robots, sitemap, and manifest support.
 
-Create:
+## Content structure
 
-```text
-content/categories/developer-tools/category.json
-content/categories/developer-tools/tools/...
-```
+Tool: `content/categories/<category>/tools/<tool>/tool.json` + `tool.tsx`
 
-Do not edit Header, Sidebar, Home, routing, SEO or sitemap files.
+Category: create a category folder with `category.json`.
 
-### Add a top-level section
+Section: create a folder under `content/sections/` with `section.json`.
 
-Create:
-
-```text
-content/sections/ai/section.json
-```
-
-Use `group: "primary"` or `group: "more"`.
-
-### Add a language
-
-Create:
-
-```text
-content/locales/de/common.json
-```
-
-The locale is auto-discovered. Keep locale data separate from tool/category data so future locale routes can be added without rewriting the content model.
-
-**Important SEO rule:** do not publish `hreflang` entries for language URLs until those localized URLs actually exist. When localized routes are introduced, each language page should have a self-canonical URL plus `hreflang` links and an `x-default` entry.
-
-## SEO included in v3
-
-- Site-wide title template and description
-- Canonical URLs
-- Per-category and per-tool SEO metadata
-- Open Graph
-- Twitter cards
-- Robots directives
-- Dynamic sitemap
-- Robots file
-- BreadcrumbList JSON-LD
-- WebSite JSON-LD with SearchAction
-- WebApplication JSON-LD for tools
-- Mobile web manifest
-- Search-friendly `/tools?q=` route
-- Static generation params for categories and tools
-- Add-only metadata-driven architecture
-- Production domain set to `https://atoolsmart.com`
-
-`.generated/content.ts` is generated automatically. Do not edit it manually.
+Language: create a folder under `content/locales/` with `common.json`.
