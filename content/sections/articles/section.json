@@ -1,9 +1,0 @@
-{
-  "slug": "articles",
-  "label": "Articles",
-  "description": "Useful articles & guides",
-  "icon": "📰",
-  "href": "/articles",
-  "group": "primary",
-  "order": 3
-}

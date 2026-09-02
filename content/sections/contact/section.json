@@ -1,9 +1,0 @@
-{
-  "slug": "contact",
-  "label": "Contact Us",
-  "description": "Get in touch",
-  "icon": "✉️",
-  "href": "/contact",
-  "group": "more",
-  "order": 9
-}
